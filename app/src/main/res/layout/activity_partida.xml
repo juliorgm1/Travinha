@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/switchLimiteGols"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fundo" />
+
+    <TextView
+        android:id="@+id/textTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tempo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/fundo_match"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTempo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewTime1"
+        style="@style/textview_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Time 1"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textViewTime2"
+        style="@style/textview_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Time 2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/textview_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gols"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime1" />
+
+    <Button
+        android:id="@+id/btnGolTime1"
+        style="@style/button_left"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/animator"
+
+        android:stateListAnimator="@android:anim/cycle_interpolator"
+        android:text="@string/add"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textGolsTime1"
+        style="@style/text_left"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGolTime1"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnGolTime1"
+        app:layout_constraintTop_toTopOf="@+id/btnGolTime1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/btnGolTime2"
+        style="@style/button_right"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textGolsTime2"
+        style="@style/text_right"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGolTime2"
+        app:layout_constraintEnd_toStartOf="@+id/btnGolTime2"
+        app:layout_constraintTop_toTopOf="@+id/btnGolTime2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/text_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faltas"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textGolsTime2" />
+
+    <Button
+        android:id="@+id/btnFaltasTime1"
+        style="@style/button_left"
+        android:text="@string/add"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnFaltasTime2"
+        style="@style/button_right"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textFaltasTime2"
+        style="@style/text_right"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFaltasTime2"
+        app:layout_constraintEnd_toStartOf="@+id/btnFaltasTime2"
+        app:layout_constraintTop_toTopOf="@+id/btnFaltasTime2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/text_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amarelos"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textFaltasTime2" />
+
+    <Button
+        android:id="@+id/btnAmarelosTime1"
+        style="@style/button_left"
+        android:text="@string/add"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnAmarelosTime2"
+        style="@style/button_right"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textAmarelosTime2"
+        style="@style/text_right"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAmarelosTime2"
+        app:layout_constraintEnd_toStartOf="@+id/btnAmarelosTime2"
+        app:layout_constraintTop_toTopOf="@+id/btnAmarelosTime2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/text_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vermelhos"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textAmarelosTime2" />
+
+    <Button
+        android:id="@+id/btnVermelhosTime1"
+        style="@style/button_left"
+        android:text="@string/add"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btnVermelhosTime2"
+        style="@style/button_right"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textVermelhosTime2"
+        style="@style/text_right"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVermelhosTime2"
+        app:layout_constraintEnd_toStartOf="@+id/btnVermelhosTime2"
+        app:layout_constraintTop_toTopOf="@+id/btnVermelhosTime2" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Finalizar Partida"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textVermelhosTime1" />
+
+    <TextView
+        android:id="@+id/textFaltasTime1"
+        style="@style/text_left"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFaltasTime1"
+        app:layout_constraintStart_toEndOf="@+id/btnFaltasTime1"
+        app:layout_constraintTop_toTopOf="@+id/btnFaltasTime1" />
+
+    <TextView
+        android:id="@+id/textAmarelosTime1"
+        style="@style/text_left"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAmarelosTime1"
+        app:layout_constraintStart_toEndOf="@+id/btnAmarelosTime1"
+        app:layout_constraintTop_toTopOf="@+id/btnAmarelosTime1" />
+
+    <TextView
+        android:id="@+id/textVermelhosTime1"
+        style="@style/text_left"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVermelhosTime1"
+        app:layout_constraintStart_toEndOf="@+id/btnVermelhosTime1"
+        app:layout_constraintTop_toTopOf="@+id/btnVermelhosTime1" />
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Reiniciar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/btnVermelhosTime1" />
+
+    <Button
+        android:id="@+id/btnNovaPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Nova Partida"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReiniciar"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/btnReiniciar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/fundo" />
 
     <TextView
-        android:id="@+id/textTempo"
+        android:id="@+id/txtTempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -47,7 +47,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTempo" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTempo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputTempo"
@@ -63,6 +63,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textTempo"
             style="@style/hintEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,6 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputTempo">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textTime1"
             style="@style/hintEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,6 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/inputTime1">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textTime2"
             style="@style/hintEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,6 +127,7 @@
         app:layout_constraintTop_toBottomOf="@+id/switchDefinirTotalGols">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textGolsParaVencer"
             style="@style/hintEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -132,7 +136,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonRolaABola"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

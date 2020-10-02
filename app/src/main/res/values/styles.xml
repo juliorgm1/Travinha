@@ -18,4 +18,59 @@
         <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
+    <style name="textview_times">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="button_left">
+    <item name="android:layout_width">@dimen/button</item>
+    <item name="android:layout_height">@dimen/button</item>
+    <item name="android:background">@drawable/animator</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:layout_marginLeft">24dp</item>
+    <item name="android:layout_marginTop">8dp</item>
+</style>
+    <style name="button_right">
+        <item name="android:layout_width">@dimen/button</item>
+        <item name="android:layout_height">@dimen/button</item>
+        <item name="android:background">@drawable/animator</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="text_left">
+        <item name="android:layout_width">@dimen/button</item>
+        <item name="android:layout_height">@dimen/button</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="color">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="text_right">
+        <item name="android:layout_width">@dimen/button</item>
+        <item name="android:layout_height">@dimen/button</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="color">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+    <style name="text_center">
+        <item name="android:layout_width">@dimen/button</item>
+        <item name="android:layout_height">@dimen/button</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="color">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <color name="white">#ffffff</color>
+    <dimen name="button">56dp</dimen>
 </resources>
